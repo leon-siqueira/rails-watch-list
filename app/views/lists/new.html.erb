@@ -1,0 +1,15 @@
+<h1>Lists#new</h1>
+<p>Find me in app/views/lists/new.html.erb</p>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+      <%= simple_form_for [@list] do |f| %>
+        <%= f.input :name, class: ''%>
+
+        <%= f.submit "New List", class: 'mt-3 btn btn-primary' %>
+
+      <% end %>
+    </div>
+  </div>
+</div>
